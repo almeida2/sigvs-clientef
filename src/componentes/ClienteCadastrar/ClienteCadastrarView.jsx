@@ -34,43 +34,43 @@ const ClienteCadastrarView = ({
 
         <div className="form-row">
           <label className="form-label">CPF</label>
-          <input className="form-input" value={cpf} onChange={e => setCpf(e.target.value)} placeholder="000.000.000-00" required />
+          <input id="cpf" name="cpf" className="form-input" value={cpf} onChange={e => setCpf(e.target.value)} placeholder="000.000.000-00" required />
         </div>
 
         <div className="form-row">
           <label className="form-label">Nome Completo</label>
-          <input className="form-input" value={nome} onChange={e => setNome(e.target.value)} placeholder="Digite o nome completo" required />
+          <input id="nome" name="nome" className="form-input" value={nome} onChange={e => setNome(e.target.value)} placeholder="Digite o nome completo" required />
         </div>
 
         <div className="form-row">
-          <label className="form-label">CEP</label>
-          <input className="form-input" value={cep} onChange={e => setCep(e.target.value)} onBlur={handleCepBlur} placeholder="00000-000" required />
+          <label className="form- label">CEP</label>
+          <input id="cep" name="cep" className="form-input" value={cep} onChange={e => setCep(e.target.value)} onBlur={handleCepBlur} placeholder="00000-000" required />
         </div>
 
         <div className="form-row">
           <label className="form-label">Email</label>
-          <input className="form-input" type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="email@exemplo.com" required />
+          <input id="email" name="email" className="form-input" type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="email@exemplo.com" required />
         </div>
 
         <div className="address-row">
           <div className="form-row">
             <label className="form-label">Logradouro</label>
-            <input className="form-input" value={endereco} disabled />
+            <input id="endereco" name="endereco" className="form-input" value={endereco} disabled />
           </div>
 
           <div className="form-row">
             <label className="form-label">Bairro</label>
-            <input className="form-input" value={bairro} disabled />
+            <input id="bairro" name="bairro" className="form-input" value={bairro} disabled />
           </div>
 
           <div className="form-row">
             <label className="form-label">Cidade</label>
-            <input className="form-input" value={cidade} disabled />
+            <input id="cidade" name="cidade" className="form-input" value={cidade} disabled />
           </div>
 
           <div className="form-row">
             <label className="form-label">Complemento</label>
-            <input className="form-input" value={complemento} onChange={e => setComplemento(e.target.value)} placeholder="Apto, Bloco, etc." />
+            <input id="complemento" name="complemento" className="form-input" value={complemento} onChange={e => setComplemento(e.target.value)} placeholder="Apto, Bloco, etc." />
           </div>
         </div>
 
